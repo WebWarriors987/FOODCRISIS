@@ -207,26 +207,28 @@ onMarkerClick=(e)=>{
                 </div>
 
                 <div className="reg_row ">
-                <div className="reg_col">
+                        <div className="reg_col">
                             <FormFields
                             formdata={this.state.formdata.contact}
                             id={'contact'}
                             change={(event)=>{this.updateform(event)}}
                            />
+                        </div>
                 </div>
-                        
-                </div>
+
                 <div className="reg_row ">
-                <div className="reg_col">
+                        <div className="reg_col">
                             <FormFields
                             formdata={this.state.formdata.additional}
                             id={'additional'}
                             change={(event)=>{this.updateform(event)}}
                            />
+                        </div>
                 </div>
-                        
-                </div>
-                {/* <div className="reg_row">
+
+
+            {
+            /* <div className="reg_row">
                 <div className="reg_col">
                 <FormFields
                         formdata={this.state.formdata.password}
@@ -234,8 +236,10 @@ onMarkerClick=(e)=>{
                         change={(event)=>{this.updateform(event)}}
                     />
                 </div>         
-                </div>    */}
-{/* 
+                </div>    */
+            }
+
+            {/* 
                 <Col>
                     <Row>
                         What is the location for service?
@@ -272,7 +276,7 @@ onMarkerClick=(e)=>{
                     </Row>
                     
                     </Col> */}
-{/*                    
+            {/*                    
                 <div className="reg_row">
                 <div className="reg_col">
                 <FormFields
