@@ -1,0 +1,95 @@
+.head_cont{
+    background:linear-gradient(rgba(0, 0, 0, 0.897),rgba(20, 20, 20, 0.87));
+    margin:0 0 100px 0;
+    margin-top:"20px"
+}
+
+.home_head{
+    font-size: 60px;
+    font-weight: 400;
+    margin: 50px;
+    padding:20px;
+    color:rgb(232, 243, 255);
+
+}
+.home_sub{
+    font-size: 25px;
+    font-weight: 300;
+    color:rgb(125, 174, 238);
+
+}
+.home_head_body{
+    height:400px;
+}
+.home_signin{
+    font-size: 20px;
+    border:1px solid rgb(0, 180, 0);
+    padding:12px;
+    color:black;
+    text-decoration: none;
+    transition:0.5s ease;
+    box-shadow: 0 1px 3px grey;
+}
+.home_signin:hover{
+    border:none;
+    text-decoration: none;
+
+    background-color: rgb(0, 180, 0);
+    color:white
+}
+.newHead{
+    padding: 100px;
+}
+.home_desc{
+    color:rgb(51, 105, 177);
+    padding:20px;
+    font-size: 25px;
+}
+.home_desc_img{
+    height:200px;
+    padding-left:100px;
+}
+.home_desc_img_2{
+    height:200px;
+    padding-right:50px;
+
+}
+
+.home_under{
+    margin:150px 0;
+
+}
+.home_corona{
+    color:rgb(150, 150, 150);
+    font-size: 30px;
+}
+.corona{
+    font-size: 40px !important; 
+}
+.corona_total{
+    font-size: 40px !important; 
+
+    color:rgb(248, 55, 55);
+}
+.covid_ngo{
+    padding:20px;
+    border: 1px solid rgb(0, 114, 207);
+    text-decoration: none;
+    font-size: 20px;
+    color:rgb(0, 114, 207);
+    transition: 0.5s ease;
+}
+.covid_ngo:hover,.covid_ngo:active{
+    padding: 20px;
+    background-color:rgb(0, 114, 207);
+    border: none;
+    text-decoration: none;
+
+    color:white
+}
+
+.link_maps{
+    margin:100px;
+    padding:50px;
+    text-align: center;
+}
