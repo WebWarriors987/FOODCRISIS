@@ -7,6 +7,7 @@ import PlacesAutocomplete, {
     getLatLng
   } from "react-places-autocomplete";
 import { alllist } from '../actions/recordactions';
+import NGO from './mapsNGO/NGO';
   
 
 export class Location extends Component {
@@ -49,7 +50,7 @@ export class Location extends Component {
                    })
                 }
              }
-            console.log(this.state.locationsmod,this.state.locations,this.props.user.userData.address.lng)
+            console.log(this.state.locationsmod)
         }).catch(err=>{
             console.log(err)
         })   
@@ -79,8 +80,8 @@ export class Location extends Component {
         return (
             <Fragment>
                 <Container>
-                    <Row style={{height:"300px"}}>
-                    <Col style={{borderRight:"1px solid black"}} >
+                    <Row >
+                    <Col  >
                     {/* <Map style={style}
           initialCenter={{
             lat: 22.445237,
@@ -121,10 +122,7 @@ export class Location extends Component {
                    {
                                 this.state.locationsmod?
                                 this.state.locationsmod.map((e,i)=>(
-                      <div className="row" key={i}>
-                         
-                         {e.name}
-                      </div>
+                      <NGO detail={e} key={i}/>
                                     )):null
                             }
                     </Col>
