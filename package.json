@@ -38,7 +38,8 @@
     "start": "node server.js",
     "server": "nodemon server.js",
     "repo": "npm run start --prefix myapp",
-    "dev": "concurrently \"npm run server\" \"npm run repo\""
+    "dev": "concurrently \"npm run server\" \"npm run repo\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix myapp && npm run build --prefix myapp"
   },
   "engines": {
     "node": "10.14.1"

@@ -38,22 +38,6 @@ class RegisterNgo extends Component {
             validationMessage:'',
             label:true
         },
-        lastname: {
-            element:'input',
-            value:'',
-            config:{
-                name:'Lastname',
-                placeholder:'Enter your Last name here',
-                type:'text'
-            },
-            validation:{
-                required:true
-            },
-            valid:false,
-            validationMessage:'',
-            label:true
-        },
-        
         contact: {
             element:'input',
             value:'',
@@ -141,6 +125,7 @@ if(isformvalid){
         }
     )}
 }
+
 setAddress=(val)=>{
     this.setState({address:val});
 }
@@ -156,7 +141,7 @@ componentDidMount=()=>{
             lng:e.coords.longitude
         }});
     })
-}
+                     }
 handleSelect = async value => {
     const results = await geocodeByAddress(value);
     const latLng = await getLatLng(results[0]);
@@ -200,6 +185,7 @@ onMarkerClick=(e)=>{
                         </div>
                          
                 </div>
+
                 <div className="reg_row">
                         <div className="reg_col">
                             <FormFields
@@ -207,47 +193,42 @@ onMarkerClick=(e)=>{
                                 id={'name'}
                                 change={(event)=>{this.updateform(event)}}
                             />
-                         </div>
-                         <div className="reg_col">
-                            <FormFields
-                                formdata={this.state.formdata.lastname}
-                                id={'lastname'}
-                                change={(event)=>{this.updateform(event)}}
-                            />
-                         
-                         </div>
+                        </div> 
                 </div>
+
                 <div className="reg_row ">
-                <div className="reg_col">
+                        <div className="reg_col">
                             <FormFields
                             formdata={this.state.formdata.email}
                             id={'email'}
                             change={(event)=>{this.updateform(event)}}
                            />
+                        </div>        
                 </div>
-                        
-                </div>
+
                 <div className="reg_row ">
-                <div className="reg_col">
+                        <div className="reg_col">
                             <FormFields
                             formdata={this.state.formdata.contact}
                             id={'contact'}
                             change={(event)=>{this.updateform(event)}}
                            />
+                        </div>
                 </div>
-                        
-                </div>
+
                 <div className="reg_row ">
-                <div className="reg_col">
+                        <div className="reg_col">
                             <FormFields
                             formdata={this.state.formdata.additional}
                             id={'additional'}
                             change={(event)=>{this.updateform(event)}}
                            />
+                        </div>
                 </div>
-                        
-                </div>
-                {/* <div className="reg_row">
+
+
+            {
+            /* <div className="reg_row">
                 <div className="reg_col">
                 <FormFields
                         formdata={this.state.formdata.password}
@@ -255,8 +236,10 @@ onMarkerClick=(e)=>{
                         change={(event)=>{this.updateform(event)}}
                     />
                 </div>         
-                </div>    */}
-{/* 
+                </div>    */
+            }
+
+            {/* 
                 <Col>
                     <Row>
                         What is the location for service?
@@ -293,7 +276,7 @@ onMarkerClick=(e)=>{
                     </Row>
                     
                     </Col> */}
-{/*                    
+            {/*                    
                 <div className="reg_row">
                 <div className="reg_col">
                 <FormFields

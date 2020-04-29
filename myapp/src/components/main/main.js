@@ -74,7 +74,7 @@ class Main extends Component {
                   <Row>
                     <Col className="home_desc" >
 
-                    This website aims to bring forward the top NGOs to your Notice so that with your little donations you can save 100 of lives
+                    This website aims to bring forward the nearest NGOs to your Notice so that with your little donations you can save 100 of lives
                     </Col>
                     
                   </Row>

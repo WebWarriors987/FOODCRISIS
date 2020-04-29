@@ -40,7 +40,7 @@ cloudinary.config({
 })
 
 
-const defaultemail={from:'lakehathorn7@gmail.com'}
+const defaultemail={from:'webwarriors12@gmail.com'}
 
 const sendmail=(emaildata)=>{
     const compemail=Object.assign(defaultemail,emaildata)
@@ -48,8 +48,8 @@ const sendmail=(emaildata)=>{
 var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'lakehathorn7@gmail.com',
-      pass: 'Soma+saumya0'
+      user: 'webwarriors12@gmail.com',
+      pass: '123SaySau'
     }
   });
   
@@ -530,9 +530,10 @@ app.post('/api/members/uploadimage',auth,formidable(),(req,res)=>{
 if( process.env.NODE_ENV === 'production' ){
     const path = require('path');
     app.get('/*',(req,res)=>{
-        res.sendfile(path.resolve(__dirname,'./myapp','build','index.html'))
+        res.sendfile(path.resolve(__dirname,'../myapp','build','index.html'))
     })
 }
+
 
 server.listen(port,()=>{
     console.log(`Server Running at ${port}`)
