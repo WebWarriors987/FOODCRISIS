@@ -24,10 +24,6 @@ const ngoSchema=mongoose.Schema({
         required:true,
         type:String
     },
-    lastname:{
-        required:true,
-        type:String
-    },
     token:{
         type:String
     },
