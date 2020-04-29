@@ -530,9 +530,10 @@ app.post('/api/members/uploadimage',auth,formidable(),(req,res)=>{
 if( process.env.NODE_ENV === 'production' ){
     const path = require('path');
     app.get('/*',(req,res)=>{
-        res.sendfile(path.resolve(__dirname,'./myapp','build','index.html'))
+        res.sendfile(path.resolve(__dirname,'../myapp','build','index.html'))
     })
 }
+
 
 server.listen(port,()=>{
     console.log(`Server Running at ${port}`)
