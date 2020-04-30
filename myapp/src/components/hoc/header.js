@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import {connect} from 'react-redux';
 import { Link } from 'react-router-dom';
 import {log} from "../actions/memberactions"
 import food from "../../images/food.jpg"
+import {Navbar, Nav, NavDropdown} from "react-bootstrap";
 import "./header.css"
 
 class Header extends Component {  
@@ -18,10 +19,39 @@ class Header extends Component {
     render() {
       console.log(this.props.user.userData)
         return (
-               
-<nav className="navbar sticky-top navbar-expand-md navbar-light" >
+<Fragment>
+<Navbar className="navbar" collapseOnSelect expand="lg" bg="light" variant="light">
+          <Navbar.Brand href="/">NGO Donate</Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="mr-auto">
+              
+            </Nav>
+            <Nav>
+              <Nav.Link className="nav-item" href="/registerngo">NGO REGISTER</Nav.Link>
+              
+              {
+                     this.props.user.userData?
+                     this.props.user.userData.isAuth?
+                     <Nav.Link className="nav-item" href="/maps">NGO List</Nav.Link>
+
+                    :null
+                    :null
+                   }
+              <Nav.Link className="nav-item" href="/register"><span className="glyphicon glyphicon-user"></span> Sign Up</Nav.Link>
+              {this.props.user.userData?
+                        
+                        !this.props.user.userData.isAuth?
+                        <Nav.Link className="nav-item" href="/login"><span className="glyphicon glyphicon-log-in"></span> Login</Nav.Link>
+                        :
+                        <Nav.Link className="nav-item" href="/" onClick={(event)=>this.logoutuser()}><span className="glyphicon glyphicon-log-in"></span> Logout</Nav.Link>
+                        :null
+        }
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
+{/* <nav className="navbar fixed-top navbar-expand-md navbar-light" >
   <a className="navbar-brand" href="#">
-    NGO Donate
   </a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span className="navbar-toggler-icon"></span>
@@ -32,7 +62,7 @@ class Header extends Component {
         <a className="nav-link" href="/">HOME</a>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="/registerngo">REGISTERASNGO</a>
+        <a className="nav-link" href="/registerngo">NGO REGISTER</a>
       </li>
       
       {
@@ -51,7 +81,7 @@ class Header extends Component {
       <li className="nav-item">
         <a className="nav-link" href="#">Link</a>
       </li>     */}
-    </ul>
+    {/* </ul>
     <ul className="navbar-nav ">
         <li className="nav-item"><a className="nav-link" href="/register"><span className="glyphicon glyphicon-user"></span> Sign Up</a></li>
         {this.props.user.userData?
@@ -63,10 +93,13 @@ class Header extends Component {
                   :null
   }
       </ul>
-  </div>  
-</nav>
+  </div>   */}
+{/* </nav> */} 
 
          
+
+</Fragment>
+          
         );
     }
 }

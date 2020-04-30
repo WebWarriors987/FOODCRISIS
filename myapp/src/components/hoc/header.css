@@ -1,24 +1,27 @@
-.navbar-nav .nav-item .nav-link{
-    font-size:18px !important;
-    padding:10px !important;
-  }
-  .navbar-nav .nav-item .nav-link:hover{
-    color:blue !important;
-  }
-  .navbar .navbar-brand{
-    
-    color:blue !important;
-    font-size: 30px;
-  }
+.nav-item {
+  font-size:18px !important;
+  padding:10px !important;
+}
+.nav-item{
+  color:blue !important;
+}
+.navbar .navbar-brand{
   
-  .navbar{
-    margin-bottom: 0px !important;
-    padding: 20px !important;
-    background-color: rgb(250, 250, 250);
-    box-shadow: 0 2px 5px black !important;
-    
-  }
+  color:blue !important;
+  font-size: 30px;
+}
+
+.navbar{
+  margin-bottom: 0px !important;
+  padding: 20px !important;
+  background-color: rgb(250, 250, 250);
+  box-shadow: 0 2px 5px black !important;
   
-  .navbar:hover{
-    border-radius: 5px !important;
-  }
+}
+
+.navbar:hover{
+  border-radius: 5px !important;
+}
+.navbar-collapse{
+  z-index: 100 !important;
+}
