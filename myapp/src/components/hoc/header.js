@@ -53,7 +53,7 @@ class Header extends Component {
 {/* <nav className="navbar fixed-top navbar-expand-md navbar-light" >
   <a className="navbar-brand" href="#">
   </a>
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+  <button className="navbar-toggle" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span className="navbar-toggler-icon"></span>
   </button>
   <div className="collapse navbar-collapse" id="collapsibleNavbar">

@@ -113,7 +113,7 @@ if(isformvalid){
                 loading:true
             })
             setTimeout(()=>{
-            this.props.history.push('/login')
+            this.props.history.push('/registerngo')
             console.log('dffdfd')
             },5000)}
             else{
