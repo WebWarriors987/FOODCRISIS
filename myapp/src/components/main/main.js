@@ -42,8 +42,8 @@ class Main extends Component {
             <Row >
     
               <Col className="newHead"  style={{textAlign:"center"}}>
-                <h1 className="home_head">Do Your Deeds While At Home</h1>
-                <span className="home_sub">Find the nearest NGOs to fund during this epidemic</span>
+                <h1 className="home_head" style={{fontFamily: "'Courgette', cursive"}}>Do Your Deeds While At Home</h1>
+                <span className="home_sub" style={{fontFamily: "'Courgette', cursive"}}>Find the nearest NGOs to fund during this epidemic</span>
 
                 <Row style={{marginTop:"50px"}}>
                   <Col  xs={12} xsOffset={6}>
@@ -51,7 +51,7 @@ class Main extends Component {
                   
                   !this.props.user.userData.isAuth?
                  
-                   <Link  className="contact-submit"  to="/login">SignUp/SignIn</Link>
+                   <Link  className="contact-submit"  to="/login" style={{fontFamily: "'Courgette', cursive",fontSize:"25px"}}>SignUp/SignIn</Link>
                   :
                   null
                  :null
@@ -72,7 +72,7 @@ class Main extends Component {
               <Col xs={8}>
                 <Container>
                   <Row>
-                    <Col className="home_desc" >
+                    <Col className="home_desc" style={{fontFamily: "'Courgette', cursive"}} >
 
                     This website aims to bring forward the nearest NGOs to your Notice so that with your little donations you can save 100 of lives
                     </Col>
@@ -107,7 +107,7 @@ class Main extends Component {
                           <Col xs={8}>
                             <Container>
                               <Row>
-                                <Col  >
+                                <Col>
                                   The threat to <span className="corona">corona-virus</span> rises everyday,
                                   with over <span className="corona_total">{this.state.Total && this.state.Total}</span> affected people.
                                 </Col>
@@ -127,7 +127,7 @@ class Main extends Component {
                 <Col x>
                     <Row xs={1}>
                       <Col xs={12}>
-                      <Link className="covid_ngo" to="/maps">Search NGOs</Link> 
+                      <Link className="covid_ngo" to="/maps" style={{fontFamily: "'Courgette', cursive",fontSize:"25px"}}>Search NGOs</Link> 
 
                       </Col>
 
