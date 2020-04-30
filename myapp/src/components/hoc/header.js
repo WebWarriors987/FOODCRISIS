@@ -20,10 +20,10 @@ class Header extends Component {
         return (
                
 <nav className="navbar sticky-top navbar-expand-md navbar-light" >
-  <a className="navbar-brand" href="#">
+  <a className="navbar-brand" href="/">
     NGO Donate
   </a>
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+  <button className="navbar-toggle" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
     <span className="navbar-toggler-icon"></span>
   </button>
   <div className="collapse navbar-collapse" id="collapsibleNavbar">
@@ -51,8 +51,6 @@ class Header extends Component {
       <li className="nav-item">
         <a className="nav-link" href="#">Link</a>
       </li>     */}
-    </ul>
-    <ul className="navbar-nav ">
         <li className="nav-item"><a className="nav-link" href="/register"><span className="glyphicon glyphicon-user"></span> Sign Up</a></li>
         {this.props.user.userData?
                   
@@ -62,7 +60,7 @@ class Header extends Component {
                   <li className="nav-item"><a className="nav-link" href="/" onClick={(event)=>this.logoutuser()}><span className="glyphicon glyphicon-log-in"></span> Logout</a></li>
                   :null
   }
-      </ul>
+   </ul>
   </div>  
 </nav>
 

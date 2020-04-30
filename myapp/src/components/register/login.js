@@ -77,7 +77,7 @@ if(isformvalid){
             },3000)
         }else{
             setTimeout(()=>{
-                this.props.history.push('/');
+                this.props.history.push('/maps');
             },3000)
         }
          }
