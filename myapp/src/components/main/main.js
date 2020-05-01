@@ -41,7 +41,7 @@ class Main extends Component {
     
             <Row >
     
-              <Col className="newHead"  style={{textAlign:"center"}}>
+              <Col xs={12} className="newHead"  style={{textAlign:"center"}}>
                 <h1 className="home_head" style={{fontFamily: "'Courgette', cursive"}}>Do Your Deeds While At Home</h1>
                 <span className="home_sub" style={{fontFamily: "'Courgette', cursive"}}>Find the nearest NGOs to fund during this epidemic</span>
 
@@ -72,7 +72,7 @@ class Main extends Component {
               <Col xs={8}>
                 <Container>
                   <Row>
-                    <Col className="home_desc" style={{fontFamily: "'Courgette', cursive"}} >
+                    <Col xs={12} className="home_desc" style={{fontFamily: "'Courgette', cursive"}} >
 
                     This website aims to bring forward the nearest NGOs to your Notice so that with your little donations you can save 100 of lives
                     </Col>
@@ -98,7 +98,7 @@ class Main extends Component {
                         <Row>
                         <Col xs={4}>
                             <Row >
-                              <Col >
+                              <Col xs={12}>
                                 <Image className="home_desc_img_2" src={covid} alt="donate" />
 
                               </Col>
@@ -107,7 +107,7 @@ class Main extends Component {
                           <Col xs={8}>
                             <Container>
                               <Row>
-                                <Col>
+                                <Col xs={12}>
                                   The threat to <span className="corona">corona-virus</span> rises everyday,
                                   with over <span className="corona_total">{this.state.Total && this.state.Total}</span> affected people.
                                 </Col>
@@ -124,7 +124,7 @@ class Main extends Component {
             <Container className="link_maps">
 
                 <Row >
-                <Col x>
+                <Col xs={12}>
                     <Row xs={1}>
                       <Col xs={12}>
                       <Link className="covid_ngo" to="/maps" style={{fontFamily: "'Courgette', cursive",fontSize:"25px"}}>Search NGOs</Link> 
