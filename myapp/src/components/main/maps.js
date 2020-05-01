@@ -80,6 +80,14 @@ export class Location extends Component {
         return (
             <Fragment>
                 <Container>
+                    <Row>
+                        
+              <div className="reg_col">
+                   <center>
+                       <p style={{fontSize:"30px",textAlign:"center",fontFamily:"algerian"}}>LIST OF ALL NGO BASED ON YOUR LOCATION</p>
+                </center>  
+               </div>
+                    </Row>
                     <Row >
                     <Col  >
                     {/* <Map style={style}
