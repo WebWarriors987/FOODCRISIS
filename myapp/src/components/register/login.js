@@ -117,7 +117,7 @@ resetpassword=(event)=>{
                 <label style={{color:'red',fontSize:"20px"}}>{this.state.show}</label>:null
                 }
                     <div className="reg_row_img">
-                        <p style={{fontSize:"30px",textAlign:"center",fontFamily:"algerian"}}>NGO Donate</p>
+                        <p style={{fontSize:"30px",textAlign:"center",fontFamily:"algerian"}}>LOGIN</p>
 
                     </div>
                     <div className="reg_row">
@@ -146,7 +146,7 @@ resetpassword=(event)=>{
                         {/* <button className="contact-submit" style={{padding:"10px"}}onClick={(event)=> this.submitform(event)}>
                      Login
                 </button> */}
-             <button id="contact-submit"  style={{padding:"10px"}} onClick={(event)=> this.submitform(event)}>
+             <button id="contact-submit" className="btn btn-primary" style={{padding:"10px"}} onClick={(event)=> this.submitform(event)}>
             LOGIN
                 </button>
                 
@@ -160,6 +160,7 @@ resetpassword=(event)=>{
                 <button 
                     
                     id="contact-submit-reset"  
+                    className="btn btn-primary"
                     onClick={(event)=> this.resetpassword(event)}>
                 RESET 
                 </button>

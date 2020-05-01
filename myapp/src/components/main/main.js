@@ -41,12 +41,12 @@ class Main extends Component {
     
             <Row >
     
-              <Col xs={12} className="newHead"  style={{textAlign:"center"}}>
+              <Col xs={12} sm={12} className="newHead"  style={{textAlign:"center"}}>
                 <h1 className="home_head" style={{fontFamily: "'Courgette', cursive"}}>Do Your Deeds While At Home</h1>
                 <span className="home_sub" style={{fontFamily: "'Courgette', cursive"}}>Find the nearest NGOs to fund during this epidemic</span>
 
                 <Row style={{marginTop:"50px"}}>
-                  <Col  xs={12} xsOffset={6}>
+                  <Col  xs={12}  sm={12}>
                   {this.props.user.userData?
                   
                   !this.props.user.userData.isAuth?
@@ -69,22 +69,26 @@ class Main extends Component {
             <Container className="home_under">
 
             <Row>
-              <Col xs={8}>
+              <Col xs={12} sm={12}>
                 <Container>
-                  <Row>
-                    <Col xs={12} className="home_desc" style={{fontFamily: "'Courgette', cursive"}} >
+                  <Row xs={1} sm={1}>
+                    <Col xs={12} sm={12} className="home_desc" style={{fontFamily: "'Courgette', cursive"}} >
+                    DUE TO THE RECENT COVID19 CRISIS, MANY PEOPLE ARE LOSING THEIR JOBS AND A LOT OF DAILY WAGE WORKERS ARE NOT GETTING FOOD TO EAT.
+MANY PEOPLE ARE WILLING TO DONATE MONEY IN THESE TIMES TO HELP OTHERS BUT ARE NOT ABLE TO FIND SUITABLE NGOs OR INDIVIDUALS IN THEIR AREA.
+MANY NGOs ARE IN NEED OF MONEY TO CARRY OUT THEIR WORK.
 
-                    This website aims to bring forward the nearest NGOs to your Notice so that with your little donations you can save 100 of lives
+OUR WEB APP COMES HERE WHICH WILL BRIDGE THIS GAP AND HELP DONORS TO DONATE MONEY IN THESE HARD TIMES TO NGOs OR PERSONS WHO NEED THESE FINANCIAL SUPPORT SO THAT EVERYONE GETS THEIR BASIC NEEDS.
+
                     </Col>
                     
                   </Row>
                 </Container>
               
               </Col>
-              <Col xs={4}>
-                <Row xs={1}>
-                  <Col xs={12}>
-                    <Image className="home_desc_img" src={Donate} alt="donate" />
+              <Col xs={12} sm={12} >
+                <Row xs={1} sm={1}>
+                  <Col xs={12} sm={12}>
+                    <Image className="home_desc_img" src={Donate} alt="donate" responsive />
 
                   </Col>
                 </Row>
@@ -96,17 +100,16 @@ class Main extends Component {
                       <Container className="home_corona">
 
                         <Row>
-                        <Col xs={4}>
-                            <Row >
+                        <Col xs={12} sm={12}>
+                            <Row xs={1} >
                               <Col xs={12}>
-                                <Image className="home_desc_img_2" src={covid} alt="donate" />
-
+                                <Image className="home_desc_img_2" src={covid} alt="donate" responsive />
                               </Col>
                             </Row>
                           </Col>
-                          <Col xs={8}>
+                          <Col xs={12} sm={12}>
                             <Container>
-                              <Row>
+                              <Row xs={1}>
                                 <Col xs={12}>
                                   The threat to <span className="corona">corona-virus</span> rises everyday,
                                   with over <span className="corona_total">{this.state.Total && this.state.Total}</span> affected people.
@@ -124,9 +127,9 @@ class Main extends Component {
             <Container className="link_maps">
 
                 <Row >
-                <Col xs={12}>
-                    <Row xs={1}>
-                      <Col xs={12}>
+                <Col xs={12} sm={12}>
+                    <Row xs={12} sm={12}>
+                      <Col xs={12} sm={12}>
                       <Link className="covid_ngo" to="/maps" style={{fontFamily: "'Courgette', cursive",fontSize:"25px"}}>Search NGOs</Link> 
 
                       </Col>

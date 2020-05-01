@@ -229,7 +229,7 @@ render() {
 
                 <div className="reg_row_img">
                         <div className="reg_col">
-                        <p style={{fontSize:"30px",textAlign:"center",fontFamily:"algerian"}}>NGO Donate</p>
+                        <p style={{fontSize:"30px",textAlign:"center",fontFamily:"algerian"}}>REGISTER AS A DONOR</p>
                         </div>
                          
                 </div>
@@ -356,7 +356,7 @@ render() {
                 <div className="reg_row_img">
                 <div className="reg_col">
                 <fieldset>
-                    <button id="contact-submit" style={{padding:"10px"}} onClick={(event)=> this.submitform(event)}>
+                    <button id="contact-submit" className="btn btn-primary" style={{padding:"10px"}} onClick={(event)=> this.submitform(event)}>
                         Create an account
                     </button>
 

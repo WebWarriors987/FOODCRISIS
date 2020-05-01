@@ -27,7 +27,7 @@ class RegisterNgo extends Component {
             element:'input',
             value:'',
             config:{
-                name:'Name',
+                name:'Name of the organisation',
                 placeholder:'Enter your name here',
                 type:'text'
             },
@@ -43,7 +43,7 @@ class RegisterNgo extends Component {
             value:'',
             config:{
                 name:'Contact Number',
-                placeholder:'Enter your contact number here',
+                placeholder:'Enter your organisation contact number here',
                 type:'text'
             },
             validation:{
@@ -57,7 +57,7 @@ class RegisterNgo extends Component {
             element:'input',
             value:'',
             config:{
-                name:'Additional information',
+                name:'Additional information(including address This app will take a location based on your device location originally)',
                 placeholder:'Enter your additional information here',
                 type:'text'
             },
@@ -181,7 +181,7 @@ onMarkerClick=(e)=>{
 
                 <div className="reg_row_img">
                         <div className="reg_col">
-                        <p style={{fontSize:"30px"}}>NGO Donate</p>
+                        <p style={{fontSize:"30px"}}>REGISTER YOUR NGO</p>
                         </div>
                          
                 </div>
@@ -291,7 +291,7 @@ onMarkerClick=(e)=>{
                 <div className="reg_row_img">
                 <div className="reg_col">
                 <fieldset>
-                    <button id="contact-submit" style={{padding:"10px"}} onClick={(event)=> this.submitform(event)}>
+                    <button id="contact-submit" className="btn btn-primary" style={{padding:"10px"}} onClick={(event)=> this.submitform(event)}>
                         Create an account
                     </button>
 
