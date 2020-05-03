@@ -128,7 +128,7 @@ export class Location extends Component {
  */} 
                    
                    {
-                                this.state.locationsmod?
+                                this.state.locationsmod.length>0?
                                 this.state.locationsmod.map((e,i)=>(
                       <NGO detail={e} key={i}/>
                                     )):null

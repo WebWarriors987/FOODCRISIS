@@ -4,7 +4,7 @@ import "./NGO.css"
 
 const NGO = (props) => {
     const {detail}=props
-    const initials=`${detail.name[0].toUpperCase()}${detail.lastname[0].toUpperCase()}`
+    const initials=`${detail.name}`
     return (
         <Fragment>
             <Row className="ngo_main">
@@ -14,7 +14,7 @@ const NGO = (props) => {
                 <Col xs={7}>
                     <Row>
                         <Col>
-    <h1 className="ngo_heading">{`${detail.name} ${detail.lastname}`} </h1>
+    <h1 className="ngo_heading">{`${detail.name}`} </h1>
                         
                         </Col>
                     </Row>
