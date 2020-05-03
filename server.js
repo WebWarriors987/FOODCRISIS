@@ -41,8 +41,8 @@ const sendmail=(emaildata)=>{
 var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-      user: 'webwarriors12@gmail.com',
-      pass: '123SaySau'
+      user: '',
+      pass: ''
     }
   });
   
