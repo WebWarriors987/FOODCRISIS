@@ -160,6 +160,6 @@ const mapDispatchToProps=dispatch=>{
 }
 
 // export default GoogleApiWrapper({
-//     apiKey: "AIzaSyDcZNMWnHrX60v-Vw3zDdClGn-avHIjsoI"
+//     apiKey: ""
 //   })(connect(mapStateToProps)(Location))
 export default connect()(Location)

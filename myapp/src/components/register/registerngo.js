@@ -309,6 +309,6 @@ onMarkerClick=(e)=>{
 }
 
 // export default GoogleApiWrapper({
-//     apiKey: "AIzaSyDcZNMWnHrX60v-Vw3zDdClGn-avHIjsoI"
+//     apiKey: ""
 //   })(connect()(RegisterNgo));
 export default connect()(RegisterNgo)
